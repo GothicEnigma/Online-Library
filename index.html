@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Online Library</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css"/>
+    <script src="index.js"></script>
     <script src="https://kit.fontawesome.com/78d474682c.js" crossorigin="anonymous"></script>
   </head>
   <body>
@@ -15,7 +16,26 @@
           <ul class="nav__links">
             <li><a href="#" class="nav__link">Home</a></li>
             <li><a href="#" class="nav__link">Contact</a></li>
-            <li><a href="#" class="nav__link nav__link--primary">Books</a></li>
+            <li><a href="#latest" class="nav__link nav__link--primary">Books</a></li>
+          </ul>
+        </div>
+        <button class="button__menu">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="menu__backdrop">
+          <button class="button__menu button__menu--close">
+            <i class="fas fa-times"></i>
+          </button>
+          <ul class="menu__links">
+            <li class="menu__list">
+              <a href="#" class="menu__link">Home</a>
+            </li>
+            <li class="menu__list">
+              <a href="#featured" class="menu__link">Books</a>
+            </li>
+            <li class="menu__list">
+              <a href="#" class="menu__link no-cursor">Contact</a>
+            </li>
           </ul>
         </div>
       </nav>
@@ -24,7 +44,9 @@
           <div class="header__description">
             <h1>North America's most awarded online library platform</h1>
             <h2>Find your dream book with <span class="cyan">Library</span></h2>
-            <button class="button">Browse books</button>
+            <a href="#featured">
+              <button class="button">Browse books</button>
+            </a>
           </div>
           <figure class="header__img--wrapper">
             <img src="./assets/Undraw_Books.png" alt="image of a girl sitting on a stack of books, reading" />
@@ -37,7 +59,7 @@
       <section id="highlights">
         <div class="container">
           <div class="row">
-            <h2 class="section__title">
+            <h2 class="highlight__title">
               Why choose <span class="cyan">Library</span>
             </h2>
             <div class="highlight__wrapper">
@@ -322,6 +344,41 @@
           </div>
         </div>
       </section>
+      <section id="explore">
+          <div class="container">
+            <div class="row">
+              <h2>
+                Explore more <span class="cyan">Books</span>
+              </h2>
+              <a href="#featured">
+                <div class="explore__button">
+                  <button class="button">Browse books</button>
+                </a>
+                </div>
+            </div>
+          </div>
+      </section>
     </main>
+
+    <footer>
+      <div class="container">
+        <div class="row row__column">
+          <a href="#">
+            <figure class="footer__logo">
+              <img src="./assets/Library.png" class="footer__logo--img" alt="">
+            </figure>
+          </a>
+          <div class="footer__list">
+            <a href="" class="footer__link">Home</a>
+            <a href="" class="footer__link">About</a>
+            <a href="" class="footer__link">Books</a>
+            <a href="" class="footer__link no-cursor">Contact</a>
+          </div>
+          <footer class="copyright">
+            &copy; Copyright 2026 Library
+          </footer>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
